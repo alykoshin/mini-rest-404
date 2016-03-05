@@ -1,6 +1,6 @@
 {
   "name": "mini-rest-404",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "&#39;404 Not Found&#39; handler for mini-rest project",
   "main": "./index.js",
   "engines": {
