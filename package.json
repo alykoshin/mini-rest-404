@@ -45,7 +45,7 @@
   },
   "homepage": "https://github.com/alykoshin/mini-rest-404",
   "dependencies": {
-    "mini-rest-errors": "0.0.0"
+    "mini-rest-errors": "0.0.1"
   },
   "devDependencies": {}
 }
