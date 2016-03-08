@@ -10,8 +10,8 @@
 
 # mini-rest-404
 
-&#39;404 Not Found&#39; handler for mini-rest project
-
+404 Not Found Express error handler for mini-rest project
+Forwards `new AppError('pageNotFound', req.originalUrl)` to `next` middleware (assuming the next middleware is Error Handler.
 
 If you have different needs regarding the functionality, please add a [feature request](https://github.com/alykoshin/mini-rest-404/issues).
 
@@ -24,6 +24,12 @@ npm install --save mini-rest-404
 
 ## Usage
 
+This line must be last after all the routes and middlewares except errorHandler:
+
+```
+  app.use(require('mini-rest-404')());
+  app.use(require('mini-rest-error-handler')());
+```
 
 ## Credits
 [Alexander](https://github.com/alykoshin/)
