@@ -29,7 +29,9 @@
     "patch-release": "npm test && npm run _patch-release && npm run _push",
     "minor-release": "npm test && npm run _minor-release && npm run _push",
     "__major-release": "npm test && npm run _major-release && npm run _push",
-    "coverall": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "coverall": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "404,not,found,notfound,rest,mini-rest,handler,express"
@@ -45,7 +47,9 @@
   },
   "homepage": "https://github.com/alykoshin/mini-rest-404",
   "dependencies": {
-    "mini-rest-errors": "0.1.12"
+    "mini-rest-errors": "0.1.12",
+    "snyk": "^1.189.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "snyk": true
 }
